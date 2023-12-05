@@ -3,10 +3,12 @@
 {% block titulo %}Libreria Digital{% endblock %}
 
 {% block contenido %}
+{% load static %}
 <div class="p-5 bg-light">
     <div class="container">
         <h1 class="display-3">Bienvenidos a mi Libreria Digital</h1>
-        <p class="lead">Empieza a leer tus libros favoritos</p>
+        <p class="lead mb-0">Empieza a leer tus libros favoritos</p>
+        <img src="{% static 'multimedia/libro.png'%}" width="150">
         <hr class="my-2">
         <p class="lead">
             <a href="{% url 'libros' %}" class="btn btn-primary btn-lg" role="button">Empezar</a>

@@ -3,6 +3,16 @@
 {% block titulo %}Libreria Digital{% endblock %}
 
 {% block contenido %}
-Seccion Acerca de...
-
+{% load static%}
+<div class="p-5 bg-light">
+    <div class="container">
+        <h3 class="display-3">Seccion Acerca De</h3>
+        <p class="lead mb-0 p-3">Mi nombre es Gabriel Garcia soy estudiante de Ingenieria en Sistemas \n Informaticos y estoy aprendiendo a utilizar
+            el Framework Django con un CRUD donde se puede realizar la adicion, edicion y eliminacion de Libros donde en una tabla se muestran los
+            cambios que se vayan realizando.
+        </p>
+        <img src="{% static 'multimedia/programador.png' %}" width="150">
+        <hr class="my-2">
+    </div>
+</div>
 {% endblock %}
